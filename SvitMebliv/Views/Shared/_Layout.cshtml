@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="ru">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Tenor+Sans&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+
+    <link href="~/Content/Site.css" rel="stylesheet" />
+
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script>
+    <script src="/js/jquery-1.11.1.js"></script>
+    <script src="/js/script.js"></script>
+    <meta name="description" content="Мебельные решения на любой вкус: мебель для гостинной, детской, кухонные гарнитуры, шкафы - купе, модульные системы, матрасы для кровати. Качественная продукция от национального производителя: +38 (04744) 4-86-98.">
+    <script type="text/javascript" src="/js/slider.js"></script>
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    @if (ViewBag.Title == null)
+    {
+        <div class="header-line">
+            <div class="table">
+                <div class="tr">
+                    <div class="td">
+                        <div class="logo postlogo">&nbsp;&nbsp;</div>
+                    </div>
+                    <div class="td">
+                        <div class="links-for-header">
+                            @Html.ActionLink("Головна", "Index", "Home")
+                            @Html.ActionLink("Про компанію", "Okompanii", "Catalog")
+                            @Html.ActionLink("Послуги", "Uslugi", "Catalog")
+                            @Html.ActionLink("Новини", "Publitations", "Catalog")
+                            @Html.ActionLink("Акції", "Akcii", "Catalog")
+                            @Html.ActionLink("Контакти", "Kontakty", "Catalog")
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-img-pages">
+            <div class="table">
+                <div class="tr">
+                    <div class="td center category-active"><a href="/uk/novinki"><img src="/images/category2/icon-new_uk.png" alt=""></a></div>
+                    <div class="td center "><a href="/uk/catalog/gostinye"><img src="/images/category2/icon-gostin_uk.png" alt=""></a></div>
+                    <div class="td center "><a href="/uk/catalog/spalni"><img src="/images/category2/icon-spalni_uk.png" alt=""></a></div>
+                    <div class="td center "><a href="/uk/catalog/detskie"><img src="/images/category2/icon-deti_uk.png" alt=""></a></div>
+                    <div class="td center "><a href="/uk/catalog/prihozhie"><img src="/images/category2/icon-shkafi_uk.png" alt=""></a></div>
+                    <div class="td center "><a href="/uk/catalog/kuhni"><img src="/images/category2/icon-kitchens_uk.png" alt=""></a></div>
+                    <div class="td center "><a href="/uk/catalog/modulnye-sistemy"><img src="/images/category2/icon-modul_uk.png" alt=""></a></div>
+                    <div class="td center "><a href="/uk/catalog/matrasy"><img src="/images/category2/icon-matres_uk.png" alt=""></a></div>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="home-header-line">
+            <table>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="logo">&nbsp;&nbsp;</div>
+        <div class="links-for-home-header">
+            @Html.ActionLink("Головна", "Index", "Home")
+            @Html.ActionLink("Про компанію", "Okompanii", "Catalog")
+            @Html.ActionLink("Послуги", "Uslugi", "Catalog")
+            @Html.ActionLink("Новини", "Publitations", "Catalog")
+            @Html.ActionLink("Акції", "Akcii", "Catalog")
+            @Html.ActionLink("Контакти", "Kontakty", "Catalog")
+        </div>
+    }
+    @RenderBody()
+    <div class="footer">
+        <div class="table">
+            <div class="tr">
+                <div class="td">
+                    <ul>
+                        <p class="footer-title-info">КАТАЛОГ</p>
+                        <li>› <a href="/uk/novinki">Новинки</a></li>
+                        <li>› <a href="/uk/catalog/gostinye">Гостьові</a></li>
+                        <li>› <a href="/uk/catalog/spalni">Спальні</a></li>
+                        <li>› <a href="/uk/catalog/detskie">Дитячі</a></li>
+                        <li>› <a href="/uk/catalog/prihozhie">Прихожi та шафи-купе</a></li>
+                        <li>› <a href="/uk/catalog/kuhni">Кухні</a></li>
+                        <li>› <a href="/uk/catalog/modulnye-sistemy">Модульні системи</a></li>
+                        <li>› <a href="/uk/catalog/matrasy">Матраци</a></li>
+                    </ul>
+                </div>
+                <div class="td">
+                    <ul>
+                        <p class="footer-title-info">ИНФОРМАЦІЯ</p>
+                        <li>› <a href="/uk">Головна</a></li>
+                        <li>› <a href="/uk/page/o-kompanii">Про компанию</a></li>
+                        <li>› <a href="/uk/page/uslugi">Послуги</a></li>
+                        <li>› <a href="/uk/publitations">Новини</a></li>
+                    </ul>
+                </div>
+                <div class="td">
+                    <ul>
+                        <p class="footer-title-info">СЛІДКУЙ ЗА НАМИ</p>
+                        <li>› <a href="http://facebook.com">Facebook</a></li>
+                        <li>› <a href="#">Twitter</a></li>
+                        <li>› <a href="#">Vkontakte</a></li>
+                    </ul>
+                </div>
+                <div class="td" style="text-align: right; margin-right: -15px;">
+                    <div class="footer-contacts">
+                        <p>КОНТАКТИ</p>
+                        Україна Черкаська обл., с. Паланка<br>
+                        Вул. Польова 2<br>
+                        +38(04744)4-86-92<br>
+                        sekretar2@svit-mebliv.ua<br>
+                        cont5<br>
+                        cont6<br>
+                        <a href="mailto:cont7" target="_top">cont7</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style type="text/css">
+            .copy {
+                float: right;
+                color: #fff;
+                margin-top: -10px;
+            }
+
+                .copy a {
+                    color: #fff;
+                }
+        </style>
+        <div class="copy"><a href="http://goresh.net">Создание сайтов</a> - Goresh</div>
+    </div>
+</body>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function () {
+            try {
+                w.yaCounter39690920 = new Ya.Metrika({
+                    id: 39690920,
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true,
+                    webvisor: true
+                });
+            } catch (e) { }
+        });
+        var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";;
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+
+<noscript>&lt;div&gt;&lt;img src="https://mc.yandex.ru/watch/39690920"; style="position:absolute; left:-9999px;" alt="" /&gt;&lt;/div&gt;</noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+         m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-89416052-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+
+
+<script type="text/javascript">
+    /*<![CDATA[*/
+    if (typeof (console) == 'object') {
+        console.group("Журнал приложения");
+        console.log("[11:58:30.030][trace][system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `publications`");
+        console.log("[11:58:30.031][trace][system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `publications`");
+        console.log("[11:58:30.031][trace][system.db.CDbCommand] Querying SQL: SELECT t.name, t.alias, i.name AS original, t.cover FROM `publications` `t` INNER JOIN images as i on t.id_news = i.id_pub WHERE visible = \"public\" or cover = \"yes\"");
+        console.log("[11:58:30.031][trace][system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `blocks`");
+        console.log("[11:58:30.032][trace][system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `blocks`");
+        console.log("[11:58:30.032][trace][system.db.CDbCommand] Querying SQL: SELECT * FROM `blocks` `t` WHERE visible = \"public\" ORDER BY position ASC");
+        console.log("[11:58:30.032][trace][system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `home_images`");
+        console.log("[11:58:30.033][trace][system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `home_images`");
+        console.log("[11:58:30.033][trace][system.db.CDbCommand] Querying SQL: SELECT * FROM `home_images` `t` WHERE visible = \"public\" ORDER BY position ASC");
+        console.log("[11:58:30.034][trace][system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `category`");
+        console.log("[11:58:30.035][trace][system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `category`");
+        console.log("[11:58:30.035][trace][system.db.CDbCommand] Querying SQL: SELECT * FROM `category` `t` WHERE `t`.`lft`=1");
+        console.groupEnd();
+    }
+    /*]]>*/
+</script>
+</html>
